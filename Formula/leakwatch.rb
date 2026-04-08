@@ -5,21 +5,21 @@
 class Leakwatch < Formula
   desc "High-performance secret scanner for codebases, Git histories, and container images"
   homepage "https://github.com/cemililik/Leakwatch"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cemililik/Leakwatch/releases/download/v1.4.0/leakwatch_1.4.0_darwin_amd64.tar.gz"
-      sha256 "5506393d782fcb2887a9e6af8e2f79d4b5b5e8490889902355373785233ce990"
+      url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_darwin_amd64.tar.gz"
+      sha256 "969f3d21c8c77f5cdd38726b9deb0fee0d3a7471d062fb4f4b2a14adaba67c1e"
 
       define_method(:install) do
         bin.install "leakwatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cemililik/Leakwatch/releases/download/v1.4.0/leakwatch_1.4.0_darwin_arm64.tar.gz"
-      sha256 "0334048d2db69eef7d9d61c33ab77ac18eec802f7f3e726819e8c37a886b6658"
+      url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_darwin_arm64.tar.gz"
+      sha256 "28e744d09b135eae8aebf40cc6f57608915127ee90049f79322f3d57b22adefc"
 
       define_method(:install) do
         bin.install "leakwatch"
@@ -29,15 +29,15 @@ class Leakwatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cemililik/Leakwatch/releases/download/v1.4.0/leakwatch_1.4.0_linux_amd64.tar.gz"
-      sha256 "c53a62e302571f5f37ac3005deffc0c64fa9f92bc9184b2770359c7f1e64b7df"
+      url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_linux_amd64.tar.gz"
+      sha256 "dd15c73cf5e8a7682a798c6ab4ae898d3ee7d6e8cb899d95e39bc76399b646fd"
       define_method(:install) do
         bin.install "leakwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cemililik/Leakwatch/releases/download/v1.4.0/leakwatch_1.4.0_linux_arm64.tar.gz"
-      sha256 "d47d487e9b173906730ae40bea1dafd6b5d81d593f2822c116295a2d9c2084a5"
+      url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_linux_arm64.tar.gz"
+      sha256 "c4b8b98d2135f90816fd71c540ab73a4ccf2bc37bcf8a79832fea54e76b565a8"
       define_method(:install) do
         bin.install "leakwatch"
       end
