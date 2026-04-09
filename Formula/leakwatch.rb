@@ -11,7 +11,7 @@ class Leakwatch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_darwin_amd64.tar.gz"
-      sha256 "969f3d21c8c77f5cdd38726b9deb0fee0d3a7471d062fb4f4b2a14adaba67c1e"
+      sha256 "0ba81409d9ee7b169135c07117490462fe772b8940bd0b7d91ffe5ea988feb8e"
 
       define_method(:install) do
         bin.install "leakwatch"
@@ -19,7 +19,7 @@ class Leakwatch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_darwin_arm64.tar.gz"
-      sha256 "28e744d09b135eae8aebf40cc6f57608915127ee90049f79322f3d57b22adefc"
+      sha256 "37b3f7ed0b8d24e11e2e2a4f7ad65500d8c6eaa4ea4aadc5d0b5d226248d570b"
 
       define_method(:install) do
         bin.install "leakwatch"
@@ -30,14 +30,14 @@ class Leakwatch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_linux_amd64.tar.gz"
-      sha256 "dd15c73cf5e8a7682a798c6ab4ae898d3ee7d6e8cb899d95e39bc76399b646fd"
+      sha256 "5e1e285c6bf6b4e5fff1ce8c77e5d228e233480274137233625b9c537c994c51"
       define_method(:install) do
         bin.install "leakwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cemililik/Leakwatch/releases/download/v1.5.0/leakwatch_1.5.0_linux_arm64.tar.gz"
-      sha256 "c4b8b98d2135f90816fd71c540ab73a4ccf2bc37bcf8a79832fea54e76b565a8"
+      sha256 "20a5d1a8acf1409105f3fbe805279ddf7a25a0d91363ce3db1504787800a9963"
       define_method(:install) do
         bin.install "leakwatch"
       end
